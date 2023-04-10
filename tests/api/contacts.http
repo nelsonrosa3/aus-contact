@@ -1,0 +1,41 @@
+# @name Contact Get All
+GET https://testcloud.assertus.com/ContactAPI/api/Contact
+
+###
+
+# @name Contact Get by Id
+GET https://testcloud.assertus.com/ContactAPI/api/Contact/1
+
+###
+
+#@name Cotact Post
+POST https://testcloud.assertus.com/ContactAPI/api/Contact
+Content-Type: application/json
+
+{
+  "ContactId": 2,
+  "Name": "TestName",
+  "Phone": "TestPhone",
+  "Fax": "TestFax",
+  "EMail": "TestEmail",
+  "Notes": "TestNotes",
+  "LastUpdatedDateTime": "",
+  "LastUpdatedUsername": ""
+}
+
+###
+
+# @name Contact Put
+PUT https://testcloud.assertus.com/ContactAPI/api/Contact/1077
+Content-Type: application/json
+
+{
+  "ContactId": 1077,
+  "Name": "TestTESTName",
+  "Phone": "TestPhone",
+  "Fax": "TestFax",
+  "EMail": "TestEmail",
+  "Notes": "TestNotes",
+  "LastUpdatedDateTime": "",
+  "LastUpdatedUsername": ""
+}
